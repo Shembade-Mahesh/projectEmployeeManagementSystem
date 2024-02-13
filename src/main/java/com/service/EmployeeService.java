@@ -35,8 +35,8 @@ public class EmployeeService implements EmployeeIntService {
 	}
 
 	
-	public void deleteEmployee(int empId) {
-		EmployeeRepo.deleteById(empId);
+	public void deleteEmployee(int id) {
+		EmployeeRepo.deleteById(id);
 		
 	}
 

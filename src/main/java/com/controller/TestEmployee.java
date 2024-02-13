@@ -51,18 +51,18 @@ public class TestEmployee {
 	public List<Employee> employeeDetails(){
 		return employeeService.listEmpolyee();
 	}
-	@DeleteMapping("Delete/{empId}")
-	public void removeEmployee(@PathVariable int empId) {
-		employeeService.deleteEmployee(empId);
+	@DeleteMapping("Delete/{id}")
+	public void removeEmployee(@PathVariable int id) {
+		employeeService.deleteEmployee(id);
 	}
 	
 	@GetMapping("EmployeeD/{emailId}")
 	public Employee getOneEmployee( @PathVariable String emailId) {
 		return employeeService.getEmployee(emailId);
 	}
-	@GetMapping("EmployeeDetails/{empId}")
-	public Employee getOneEmployee(@PathVariable int empId) {
-		return employeeService.getOneEmployee(empId);
+	@GetMapping("EmployeeDetails/{id}")
+	public Employee getOneEmployee(@PathVariable int id) {
+		return employeeService.getOneEmployee(id);
 	}
 	
 

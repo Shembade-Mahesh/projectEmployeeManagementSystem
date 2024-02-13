@@ -27,8 +27,8 @@ public class Employee {
 	public int getId() {
 		return id;
 	}
-	public void setId(int empId) {
-		this.id = empId;
+	public void setId(int id) {
+		this.id = id;
 	}
 	public String getFirstName() {
 		return firstName;
@@ -50,7 +50,7 @@ public class Employee {
 	}
 	@Override
 	public String toString() {
-		return "Employee [empId=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", emailId="
+		return "Employee [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", emailId="
 				+ emailId + "]";
 	}
 	
